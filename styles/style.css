@@ -56,9 +56,9 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-    'tiny1 huge1 huge1'
-    'huge2 huge2 tiny2'
-    'tiny3 huge3 huge3';
+        'tiny1 huge1 huge1'
+        'huge2 huge2 tiny2'
+        'tiny3 huge3 huge3';
     gap: 1%;
 }
 
@@ -77,11 +77,96 @@ img {
 .grid-item6 {
     position: relative;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 20px;
     background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
 }
 
+.grid-item1:hover {
+    background: none;
+}
+
+.grid-item2:hover {
+    background: none;
+}
+
+.grid-item3:hover {
+    background: none;
+}
+
+.grid-item4:hover {
+    background: none;
+}
+
+.grid-item5:hover {
+    background: none;
+}
+
+.grid-item6:hover {
+    background: none;
+}
+
 .item {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.grid-item1:hover .item {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.grid-item2:hover .item {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.grid-item3:hover .item {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.grid-item4:hover .item {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.grid-item5:hover .item {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.grid-item6:hover .item {
     position: absolute;
     width: 100%;
     display: flex;
@@ -116,30 +201,6 @@ img {
     font-size: 20px;
     line-height: 23px;
     color: #E0E0E0;
-}
-
-.grid-item1:hover {
-    background: none;
-}
-
-.grid-item2:hover {
-    background: none;
-}
-
-.grid-item3:hover {
-    background: none;
-}
-
-.grid-item4:hover {
-    background: none;
-}
-
-.grid-item5:hover {
-    background: none;
-}
-
-.grid-item6:hover {
-    background: none;
 }
 
 @media only screen and (max-width: 1280px) {
